@@ -1,0 +1,107 @@
+:root {
+    --bg: #f4f6f8;
+    --card: #ffffff;
+    --text: #1f2937;
+    --accent: #2563eb;
+}
+* {
+                box-sizing:border-box;
+    }
+html {
+                scroll-behavior: smooth;
+    } 
+body {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1rem;
+                background-color: var(--bg);
+                color: var(--text);
+                margin: 0;
+                line-height: 1.6;
+    }
+h2 {
+                font-size: 1.5rem;
+                margin: 0 0 1rem 0;
+                color: var(--accent);
+    }
+header {
+                text-align: center;
+                padding: 2rem 1rem;
+        }
+nav{
+                position:sticky;
+                top:0;
+                background-color:var(--card);
+                padding:0.75rem;
+                text-align:center;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+nav a {
+                margin: 0 0.5rem;
+                text-decoration: none;
+                color: var(--accent);
+       }
+nav a:hover {
+                text-decoration: underline;
+        }
+main{
+                max-width:800px;
+                margin:0 auto;
+                padding:0 1rem;
+    }
+section{
+                margin-bottom:2rem;
+                background-color:var(--card);
+                padding:1.5rem;
+                border-radius:12px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+                scroll-margin-top: 4rem;
+        }
+.name {
+                text-transform: uppercase;
+}
+.chips{
+                list-style:none;
+                padding:0;
+                display:flex;
+                flex-wrap:wrap;
+                margin:0;
+                gap: 0.5rem;
+        }
+.chips li{
+                background-color:#dbeafe;
+                color:var(--accent);
+                padding:0.5rem 1rem;
+                border-radius:999px;
+                font-size:0.9rem;
+                transition: background-color 0.4s, color 0.4s;
+        }   
+.chips li:hover{
+                background-color:var(--accent);
+                color:#ffffff;
+                cursor:pointer;
+        }
+@media (max-width: 600px) {
+                header{padding: 1rem 0.5rem;}
+                h1{font-size:1.5rem;}
+                nav a {margin: 0 0.3rem;}
+                section{padding:1rem;}
+}
+.contactlinks{
+               list-style: none;
+               padding: 0;
+               margin: 0;
+               display: flex;
+               flex-wrap: wrap;
+               gap: 0.8rem;
+}
+.contactlinks a{
+               display: inline-block;
+               background: var(--accent);
+               color: #ffffff;
+               padding: 0.5rem 1rem;
+               border-radius: 8px;
+               text-decoration: none;
+}
+.contactlinks a:hover{
+               opacity: 0.85;
+}
